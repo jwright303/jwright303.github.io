@@ -41,9 +41,9 @@ body {font-family: "Lato", sans-serif}
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Me</a>
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Experience</a>
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Projects</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Extracirriculars</a>
+  <a href="#experience" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Experience</a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Projects</a>
+  <a href="#extracirriculars" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Extracirriculars</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact Information</a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
 </div>
@@ -143,6 +143,44 @@ body {font-family: "Lato", sans-serif}
         <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
         <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
         <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Project Section -->
+  <div class="w3-black" id="projects">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Projects</h2>
+      <p class="w3-opacity w3-center"><i>My Signigicant Projects</i></p><br>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Collision Avoidance for Authonomous Mobile Robots</b></p>
+            <p class="w3-opacity">September 2021 - June 2022</p>
+            <p>Created computer vision programs to enable object and drop-off detection and avoidance</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
