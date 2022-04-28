@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="./style.css">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -72,20 +73,6 @@ body {font-family: "Lato", sans-serif}
     <p class="w3-justify">
     My name is Jack Wright and I am a fourth year student currently studying computer science with a focus in Artificial Intelligence at Oregon State university. Throughout my time at OSU I have been fortunate enough to explore many different fields within CS. Some of the areas that I have developed passion for are AI, Networks, and Security. Over the last two years, I have been doing undergraduate researched focused on networks, and specifically network security.
     </p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div>
-    </div>
   </div>
 
   <!-- The Experience Section -->
@@ -95,10 +82,33 @@ body {font-family: "Lato", sans-serif}
       <h2 class="w3-wide w3-center">Experience</h2>
       <p class="w3-opacity w3-center"><i>My relevent experience</i></p><br>
 
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">Nordstrom</li>
-        <li class="w3-padding">iD Tech </li>
-        <li class="w3-padding">Undergraduate Research </li>
+      <ul class="job w3-ul w3-border w3-white w3-text-grey">
+        <li class="job_section">
+          <p class="left">Nordstrom<span class="right">June 2019 - August 2019</span></p>
+          <p class="job_role"><i>Web and Stock Team</i></p>
+          <ul class="job_notes">
+            <li class="job_item">Line one of something that I did there</li>
+            <li class="job_item">Line one of something that I did there</li>
+            <li class="job_item">Line one of something that I did there</li>
+          </ul>
+        </li>
+        <li class="job_section">
+          <p class="left">iD Tech<span class="right">June 2021 - August 2021</span></p>
+          <p class="job_role"><i>Virtual Tech Camp Instructor</i></p>
+          <ul class="job_notes">
+            <li class="job_item">Lead kids ages 12-18 through a course on advanced python, machine learning, and cryptography</li>
+            <li class="job_item">Organized meetings with parents to demonstrate completed projects and topics learned</li>
+          </ul>
+        </li>
+        <li class="job_section">
+          <p class="left">Oregon State University Reserach<span class="right">November 2020 - Present</span></p>
+          <p class="job_role"><i>Undergraduate Research Assistant</i></p>
+          <ul class="job_notes">
+            <li class="job_item">Researched and simulated the coexistence of 5G and wifi devices, evaluating the fairness of channel access</li>
+            <li class="job_item">Created and presented a report summarizing the WEP, WPA, and WPA2 WiFi security protocols</li>
+            <li class="job_item">Collect radio signal (IQ and FFT) data for radio frequency fingerprinting dataset</li>
+          </ul>
+        </li>
       </ul>
       </div>
     </div>
@@ -139,7 +149,9 @@ body {font-family: "Lato", sans-serif}
             <p><b>Collision Avoidance for Authonomous Mobile Robots</b></p>
             <p class="w3-opacity">September 2021 - June 2022</p>
             <p>Created computer vision programs to enable object and drop-off detection and avoidance</p>
+            <!--
             <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+            -->
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
@@ -150,16 +162,16 @@ body {font-family: "Lato", sans-serif}
             <p><b>Wifi 5G Coexistence Simulation</b></p>
             <p class="w3-opacity">January 2021 - June 2021</p>
             <p>Reserached and simulated the fairness of coexistence between Wifi and 5G in the 5GHz band</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <a href="https://github.com/jwright303/Group-Web-Development-Final">
+          <img src="./Images/Web_Dev.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          </a>
           <div class="w3-container w3-white">
-            <p><b>San Francisco</b></p>
-            <p class="w3-opacity">Sun 29 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+            <p><b>Web Development Final</b></p>
+            <p class="w3-opacity">March 2020 - May 2020</p>
+            <p>Helped develop front end and back end code for our group final</p>
           </div>
         </div>
       </div>
@@ -171,15 +183,11 @@ body {font-family: "Lato", sans-serif}
     <h2 class="w3-wide">Extracirriculars</h2>
     <p class="w3-opacity"><i>Other experiences</i></p>
     <div class="w3-row w3-padding-32">
-      <div class="w3-third">
+      <div class="w3-half">
         <p>Name</p>
         <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
       </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
+      <div class="w3-half">
         <p>Name</p>
         <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
       </div>
