@@ -2,20 +2,73 @@
 <head>
 <title>Jack's Photography</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="image_style.css">
 </head>
-<body>
+
+<!--
   <img src="./Images/Me_Arches.jpg" style="width:100%">
   <img src="./Images/Arches_Pillars.jpg" style="width:100%">
   <img src="./Images/Fat_Arch.jpg" style="width:100%">
   <img src="./Images/Friends.jpg" style="width:100%">
   <img src="./Images/Long_Arch.jpg" style="width:100%">
+
+  Note for below, ids might mess things up after they get changed
+-->
+
+<body>
+  <div class="slides" id="slides">
+    <div class="c1 rellax" data-rellax-speed="35"></div>
+    <div class="c1 rellax" data-rellax-speed="40"></div>
+    <div class="c1 rellax" data-rellax-speed="45"></div>
+    <div class="c1 rellax" data-rellax-speed="50"></div>
+    <div class="c1 rellax" data-rellax-speed="55"></div>
+    <div class="c1 rellax" data-rellax-speed="60"></div>
+  </div>
+
+  <div class="fixed" id="fixed"></div>
+
+  <!--
+  <div class="fixed" id="fixed"></div>
+-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="my_jsq.js"></script>
   <script>
-    const img_names = ["Me_arches.png", ""]
+
+    //const img_dir = "./Images/"
+    //const img_names = ["Me_Arches.jpg", "Fat_Arch.jpg", "Long_Arch.jpg", "Friends.jpg", "Arches_Pillars.jpg", "Wisconsin_Capitol.jpg"]
+    var rellax = new Rellax(".rellax")
+
+    var element = document.getElementById('slides');
+    console.log("slide height", element.offsetHeight);
+
+    //var divs = $('.fademe');
+    // var cur_im = $('.slides');
+    // $(window).scroll(function(){
+    //    var percent = $(document).scrollTop() / ($(document).height() - $(window).height());
+    //    cur_im.css('opacity', 1 - percent);
+       
+    // });
+
+
+
+     // var st = $(this).scrollTop();
+
+     //   /* avoid unnecessary call to jQuery function */
+     //   if (st <= limit) {
+     //      divs.css({ 'opacity' : (1 - st/limit) });
+     //   }
+    // });
+
+    //.style.backgroundImage="url(images/img.jpg)"; // specify the image path here
+
   </script>
+  <script src="my_jsq.js"></script>
 
 </body>
 </html>
