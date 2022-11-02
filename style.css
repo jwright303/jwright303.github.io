@@ -29,6 +29,21 @@ h1 {
   margin: 0px 0px 0px 0px;
 }
 
+.projs {
+  display: flex;
+}
+
+.proj-cols {
+  width: 33.33%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.proj-item {
+  margin-bottom: 10px;
+}
+
+
 ul.job_notes {
   list-style-type: circle;
   border: 0px solid black;
