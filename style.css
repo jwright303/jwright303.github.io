@@ -39,6 +39,18 @@ h1 {
   margin-right: 5px;
 }
 
+.proj-cols-left {
+  padding-top: 0px;
+}
+
+.proj-cols-middle {
+  padding-top: 140px;
+}
+
+.proj-cols-right {
+  padding-top: 0px;
+}
+
 .proj-item {
   margin-bottom: 10px;
 }
