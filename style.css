@@ -100,3 +100,9 @@ p.sec_titles {
 div.pad_right {
   margin-right: 5px;
 }
+
+.valentines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
