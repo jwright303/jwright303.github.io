@@ -7,13 +7,13 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="image_style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
-    <body>
+    <body bgcolor="black">
         <div class="valentines">
-            <h1 id="title">Happy Valentines day </h1>
-            <h4 id="message"></h6>
+            <h1 class="white" id="title">Happy Valentines day </h1>
+            <h4 class="white" id="message"></h6>
             <img src="Images/ezgif-5e1a81d6dd4669.gif" alt="Valentines Day">
         </div>
     </body>
@@ -40,7 +40,6 @@
     console.log("Name: ", urlParams.get("name"))
     window.onload = function loadE() {
         title.innerHTML = "Happy Valentines day " + name.toProperCase();
-        message.innerHTML = all_messages[2];
         message.innerHTML = all_messages[Math.floor(Math.random()*all_messages.length)]
     };
 </script>

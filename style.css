@@ -102,7 +102,17 @@ div.pad_right {
 }
 
 .valentines {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.white {
+  color: white;
+}
+
+h1.white { 
+  color: white;
+  margin-left: 0px;
 }
