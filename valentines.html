@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>Valentines Day</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Type" content="width=1280, initial-scale=1, charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,10 +20,15 @@
 </html>
 
 <script>
-    const title = document.getElementById("title")
-    const message = document.getElementById("message")
+    const title = document.getElementById("title");
+    const message = document.getElementById("message");
     const urlParams = new URLSearchParams(window.location.search);
-    const name = urlParams.get("name")
+    const name = urlParams.get("name");
+    var site_width = 1280;
+    var scale = screen.width /site_width;
+
+    document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+site_width+', initial-scale='+scale+'');
+
     const all_messages = [
         "You the best!",
         "You the GOAT &#128016",
